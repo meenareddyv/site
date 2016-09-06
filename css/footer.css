@@ -1,0 +1,43 @@
+/**************************** Footer ******************************/
+.footer {
+	padding: 1px;
+	background-color: #282827;/*292c2f*/
+	border-radius: 0 0 10px 10px;
+	border-right: 0px solid rgba(2, 2, 2, 0.28);
+	border-left: 0px solid rgba(2, 2, 2, 0.28);
+	border-top: 2px solid rgba(250, 250, 250, 0.27);
+	overflow: hidden;
+	text-align: center;
+	margin-top: 80px;
+	font-weight: bold;
+	font: normal 14px sans-serif;
+	padding:50px;
+	color:  #FFF;
+}
+
+.footer.footer-company-motto{
+	color:  #FFF;
+	font-size: 12px;
+	margin: 0;
+}
+
+.footer.footer-company-name{
+	color:  #FFF;
+	font-size: 10px;
+	margin: 0;
+}
+
+.footer.footer-links{
+	list-style: none;
+	font-weight: bold;
+	color:  #FFF;
+	padding: 35px 0 23px;
+	margin: 0;
+}
+
+.footer .footer-links a{
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+	font-size: 12px;
+}

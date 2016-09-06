@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+* {
+/* With these codes padding and border does not increase it's width and gives intuitive style.*/
+
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+#envelope{
+width:70%;
+height:auto;
+margin: 10px 10px 10px 100px;
+padding:10px 0;
+border: 0px solid gray;
+
+}
+
+
+/* Makes responsive fields. Sets size and field alignment.*/
+input[type=text] {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #7ac9b7;
+}
+
+input[type=submit] {
+	margin-bottom: 5px;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #7ac9b7;
+	background-color: #4180C5;
+	color: aliceblue;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#submit:hover {
+	background-color: black;
+}
+
+textarea {
+	width: 100%;
+	height:120px;
+	padding: 15px;
+	margin-top: 10px;
+	border: 1px solid #7ac9b7;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	resize: none;
+}
+
+input[type=text]:focus, textarea:focus {
+	border-color: #4697e4;
+}
