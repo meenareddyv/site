@@ -1,0 +1,54 @@
+<div ng-controller="culturalRegController" id="envelope">
+    <form name="culturalReg" class="contact_form" novalidate>
+        <h3 style="text-align:center">Cultural Registration for Deepavali 2016</h3>
+        <h4 style="text-align:center" ng-hide="form"><br>{{message}}</h4>
+        <ul ng-show="form">
+            <li>
+                <label for="typeofevent">Type of Event:</label>
+                <select ng-model="cultural.typeofevent" 
+                        ng-options="x for x in ['Dancing','Singing','Skit','Other']">
+                </select>
+            </li>
+
+            <li>
+                <label>Name of the Event:</label>
+                <input type="text"  ng-model="cultural.nameofevent" placeholder="Event name" required>
+            </li>
+
+            <li>
+                <label for="ownerofevent">Owner of the Event:</label>
+                <input type="text" ng-model="cultural.ownerofevent" placeholder="Enter Owner of event" required>
+            </li>
+
+            <li>
+                <label for="mobile">Mobile:</label>
+                <input type="tel" ng-model="cultural.mobile" placeholder="Enter Mobile number" required>
+            </li>
+
+            <li>
+                <label for="noofparticipants">No of Participants:</label>
+                <input type="text" ng-model="cultural.noofparticipants" placeholder="Enter No of Participants" required>
+            </li>
+
+
+            <li>
+                <label for="duration">Duration in minutes:</label>
+                <input type="number" ng-model="cultural.duration" placeholder="5" min="1" max="99" required>
+            </li>
+
+            <li>
+                <label for="email">Email ID:</label>
+                <input type="email" ng-model="cultural.email" placeholder="Enter Email ID" required>
+            </li>
+
+            <li>
+                <label for="message">Message:</label>
+                <textarea ng-model="cultural.message" cols="40" rows="6" ></textarea>
+            </li>
+
+            <li>
+                <button class="btnAction" ng-click="submitCulturalRegistration()" ng-disabled="culturalReg.$invalid">Register</button>
+            </li>
+        </ul>
+    </form>
+</div>

@@ -1,0 +1,28 @@
+<div ng-controller="contactController" id="envelope">
+    <form name="contactUs" class="contact_form" novalidate>
+        <ul>
+            <li>
+                <h3>Contact Us</h3>
+            </li>
+            <li>
+                <label for="userName">Name:</label> 
+                <input type="text" ng-model="contact.userName" placeholder="Enter Name" required>
+            </li>
+            <li>
+                <label for="userEmail">Email:</label> 
+                <input type="email" ng-model="contact.userEmail" placeholder="Enter Email" required>
+            </li>
+            <li>
+                <label for="subject">Subject:</label> 
+                <input type="text" ng-model="contact.subject" placeholder="Enter Subject" required>
+            </li>
+            <li>
+                <label for="message">Message:</label> 
+                <textarea ng-model="contact.message" cols="40" rows="6" required></textarea>
+            </li>
+            <li>
+                <button name="submit" class="btnAction" ng-click="sendContact()" ng-disabled="contactUs.$invalid">Send Message</button>
+            </li>
+        </ul>
+    </form>
+</div>

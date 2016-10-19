@@ -1,0 +1,78 @@
+<div ng-controller="memberRegController" id="envelope">
+    <form name="memberReg" class="contact_form" novalidate>
+        <ul>
+            <li><h3>Member Registration</h3></li>
+
+            <li>
+                <label for="fname">First Name:</label>
+                <input type="text"  ng-model="member.fname" placeholder="Enter First Name" required>
+            </li>
+            <li>
+                <label for="lname">Last Name:</label>
+                <input type="text"  ng-model="member.lname" placeholder="Enter Last Name" required>
+            </li>
+            <li>
+                <label for="mobile">Contact No.:</label>
+                <input type="tel" ng-model="member.mobile" placeholder="Enter Mobile number" required>
+            </li>
+            <li>
+                <label for="sname">Spouse Name:</label>
+                <input type="text"  ng-model="member.sname" placeholder="Enter Spouse Name">
+            </li>
+            <li>
+                <label for="email">Email ID:</label>
+                <input type="email" ng-model="member.email" placeholder="Enter Email ID" required>
+            </li>
+
+            <li>
+                <label for="noOfChildren">No of Children:</label>
+                <select ng-model="member.noOfChildren">
+                    <option ng-repeat="x in childernOption" value="{{x.value}}">{{x.opt}}</option>
+                </select>
+            </li>
+
+            <li ng-show="noOfChildren > 0">
+                <label for="member.child1Name">Child - 1:</label>
+                <input type="text" ng-model="member.child1Name" placeholder="Enter Name"/>
+                <input type="text" ng-model="member.child1Age" placeholder="Enter Age" style="width:110px;"/>
+                <select ng-init="member.child1Sex = 'Female'" ng-model="member.child1Sex" style="width:110px;height:25px;"
+                        ng-options="x for x in ['Female', 'Male']">
+                </select>
+            </li>
+            <li ng-show="noOfChildren > 1">
+                <label for="member.child2Name">Child - 2:</label>
+                <input type="text" ng-model="member.child2Name" placeholder="Enter Name"/>
+                <input type="text" ng-model="member.child2Age" placeholder="Enter Age" style="width:110px;"/>
+                <select ng-init="member.child2Sex = 'Female'" ng-model="member.child2Sex" style="width:110px;height:25px;"
+                        ng-options="x for x in ['Female', 'Male']">
+                </select>
+            </li>
+            <li ng-show="noOfChildren > 2">
+                <label for="member.child3Name">Child - 3:</label>
+                <input type="text" ng-model="member.child3Name" placeholder="Enter Name"/>
+                <input type="text" ng-model="member.child3Age" placeholder="Enter Age" style="width:110px;"/>
+                <select ng-init="member.child3Sex = 'Female'" ng-model="member.child3Sex" style="width:110px;height:25px;"
+                        ng-options="x for x in ['Female', 'Male']">
+                </select>
+            </li>
+            <li ng-show="noOfChildren > 3">
+                <label for="member.child4Name">Child - 4:</label>
+                <input type="text" ng-model="member.child4Name" placeholder="Enter Name"/>
+                <input type="text" ng-model="member.child4Age" placeholder="Enter Age" style="width:110px;"/>
+                <select ng-init="member.child4Sex = 'Female'" ng-model="member.child4Sex" style="width:110px;height:25px;"
+                        ng-options="x for x in ['Female', 'Male']">
+                </select>
+            </li>
+            <li ng-show="noOfChildren > 4">
+                <label for="child5Name">Child - 5:</label>
+                <input type="text" ng-model="member.child5Name" placeholder="Enter Name"/>
+                <input type="text" ng-model="member.child5Age" placeholder="Enter Age" style="width:110px;"/>
+                <select ng-init="member.child5Sex = 'Female'" ng-model="member.child5Sex" style="width:110px;height:25px;"
+                        ng-options="x for x in ['Female', 'Male']">
+                </select>
+            </li>
+
+            <li><button class="btnAction" name="submit" ng-click="memberRegistration()" ng-disabled="memberReg.$invalid">Register</button></li>
+        </ul>
+    </form>
+</div>

@@ -22,7 +22,7 @@ header {
 	color: #F1F1F1;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
-	background-image: url("../site-images/TTA header.jpg");
+	background-image: url("../images/TTA header.jpg");
 	background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -180,3 +180,21 @@ header, #content, #middle, #sidebar {
 .center-align{
 text-align: center;
 }
+
+.ad-img-style {
+	height: 80px;
+	width: 100%;
+	border-bottom: 1px solid #000;
+}
+
+/* Carousel styles */
+
+#slides_control img {
+  margin:auto;
+  width: 100%;
+}
+
+.vision, .about {
+    margin:30px;
+}
+

@@ -1,5 +1,3 @@
 <?php
-
-   header('Location:pages/home.php');
-
+   header('Location:views/tta.html');
 ?>

@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../resources/css/styles.css">
+        <link rel="stylesheet" href="../resources/css/nav.css">
+        <link rel="stylesheet" href="../resources/css/footer.css">
+        <link rel="stylesheet" href="../resources/css/form-styles.css">
+        <link rel="stylesheet" href="../resources/css/side-menu-styles.css">
+        <link rel="stylesheet" href="../resources/css/text-scroll.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../resources/angular158/angular.min.js"></script>
+        <script type="text/javascript" src="../resources/angular158/angular-route.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+        <script type="text/javascript" src="../resources/js/side-script.js"></script>
+        <script type="text/javascript" src="../scripts/controllers/controller.js"></script>
+        <script type="text/javascript" src="../scripts/controllers/directives.js"></script>
+        <script type="text/javascript" src="../scripts/controllers/app.js"></script>
+    </head>
+    <body  ng-app="ttaApp" ng-controller="mainController">
+        <div id="pagewrap">
+            <header></header>
+            <tta-scroller></tta-scroller>
+            <section id="content">
+		<div id="hcssmenu">
+                    <ul>
+                        <li ng-click='activate(item)'
+                            ng-repeat='item in items'
+                            ng-class="{'active': item == active}">
+                            <a href="#{{item.link}}"><span>{{item.caption}}</span></a>           
+                        </li>
+                    </ul>
+		</div>
+            </section>
+            <section id="middle">
+                <ng-view></ng-view>
+            </section>
+            <aside id="sidebar">
+                <div ng-repeat='ad in ads'>
+                    <a href="{{ad[0]}}"><img class="ad-img-style" src="../resources/ads/{{ad[1]}}"></a>
+                </div>
+            </aside>
+            <footer>
+                <tta-footer></tta-footer>
+            </footer>
+        </div>
+    </body>
+</html>
