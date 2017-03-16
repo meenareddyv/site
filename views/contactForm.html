@@ -1,6 +1,11 @@
 <div ng-controller="contactController" id="envelope">
     <form name="contactUs" class="contact_form" novalidate>
-        <ul>
+        <ul ng-hide="message==''">
+        <li>
+            <h3>{{message}}</h3>
+        </li>
+        </ul>
+        <ul ng-show="message==''">
             <li>
                 <h3>Contact Us</h3>
             </li>

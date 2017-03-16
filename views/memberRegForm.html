@@ -1,6 +1,9 @@
 <div ng-controller="memberRegController" id="envelope">
     <form name="memberReg" class="contact_form" novalidate>
-        <ul>
+        <ul ng-hide="message==''">
+            <li><h3>{{message}}</h3></li>
+        </ul>
+        <ul ng-show="message==''">
             <li><h3>Member Registration</h3></li>
 
             <li>
@@ -13,7 +16,7 @@
             </li>
             <li>
                 <label for="mobile">Contact No.:</label>
-                <input type="tel" ng-model="member.mobile" placeholder="Enter Mobile number" required>
+                <input type="text" ng-model="member.mobile" placeholder="Enter Mobile number" required>
             </li>
             <li>
                 <label for="sname">Spouse Name:</label>
@@ -31,7 +34,7 @@
                 </select>
             </li>
 
-            <li ng-show="noOfChildren > 0">
+            <li ng-show="member.noOfChildren > 0">
                 <label for="member.child1Name">Child - 1:</label>
                 <input type="text" ng-model="member.child1Name" placeholder="Enter Name"/>
                 <input type="text" ng-model="member.child1Age" placeholder="Enter Age" style="width:110px;"/>
@@ -39,7 +42,7 @@
                         ng-options="x for x in ['Female', 'Male']">
                 </select>
             </li>
-            <li ng-show="noOfChildren > 1">
+            <li ng-show="member.noOfChildren > 1">
                 <label for="member.child2Name">Child - 2:</label>
                 <input type="text" ng-model="member.child2Name" placeholder="Enter Name"/>
                 <input type="text" ng-model="member.child2Age" placeholder="Enter Age" style="width:110px;"/>
@@ -47,7 +50,7 @@
                         ng-options="x for x in ['Female', 'Male']">
                 </select>
             </li>
-            <li ng-show="noOfChildren > 2">
+            <li ng-show="member.noOfChildren > 2">
                 <label for="member.child3Name">Child - 3:</label>
                 <input type="text" ng-model="member.child3Name" placeholder="Enter Name"/>
                 <input type="text" ng-model="member.child3Age" placeholder="Enter Age" style="width:110px;"/>
@@ -55,7 +58,7 @@
                         ng-options="x for x in ['Female', 'Male']">
                 </select>
             </li>
-            <li ng-show="noOfChildren > 3">
+            <li ng-show="member.noOfChildren > 3">
                 <label for="member.child4Name">Child - 4:</label>
                 <input type="text" ng-model="member.child4Name" placeholder="Enter Name"/>
                 <input type="text" ng-model="member.child4Age" placeholder="Enter Age" style="width:110px;"/>
@@ -63,7 +66,7 @@
                         ng-options="x for x in ['Female', 'Male']">
                 </select>
             </li>
-            <li ng-show="noOfChildren > 4">
+            <li ng-show="member.noOfChildren > 4">
                 <label for="child5Name">Child - 5:</label>
                 <input type="text" ng-model="member.child5Name" placeholder="Enter Name"/>
                 <input type="text" ng-model="member.child5Age" placeholder="Enter Age" style="width:110px;"/>

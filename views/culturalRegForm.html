@@ -1,7 +1,7 @@
 <div ng-controller="culturalRegController" id="envelope">
     <form name="culturalReg" class="contact_form" novalidate>
         <h3 style="text-align:center">Cultural Registration for Deepavali 2016</h3>
-        <h4 style="text-align:center" ng-hide="form"><br>{{message}}</h4>
+        <h4 style="text-align:center; color:red" ng-hide="form"><br>{{message}}</h4>
         <ul ng-show="form">
             <li>
                 <label for="typeofevent">Type of Event:</label>
@@ -22,12 +22,12 @@
 
             <li>
                 <label for="mobile">Mobile:</label>
-                <input type="tel" ng-model="cultural.mobile" placeholder="Enter Mobile number" required>
+                <input type="text" ng-model="cultural.mobile" placeholder="Enter Mobile number" required>
             </li>
 
             <li>
                 <label for="noofparticipants">No of Participants:</label>
-                <input type="text" ng-model="cultural.noofparticipants" placeholder="Enter No of Participants" required>
+                <input type="number" ng-model="cultural.noofparticipants" placeholder="8" min="1" max="99" required>
             </li>
 
 

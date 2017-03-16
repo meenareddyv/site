@@ -1,8 +1,11 @@
+'use strict';
 angular.module('ttaApp', [
     'ngRoute',
     'ttaControllers',
     'ttaDirectives',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'ngAnimate',
+    'ngTouch'    
 ])
 
 .config(function($routeProvider) {
@@ -12,6 +15,7 @@ angular.module('ttaApp', [
         .when('/sponsorship', {templateUrl : '../views/sponsorship.html'})
         .when('/culturalRegistration', {templateUrl : '../views/culturalRegForm.html'})
         .when('/memberRegistration', {templateUrl : '../views/memberRegForm.html'})
+        .when('/events', {templateUrl : '../views/events.html'})
         .when('/aboutus', {templateUrl : '../views/about.html'})
         .when('/vision', {templateUrl : '../views/vision.html'})
         .when('/contact', {templateUrl : '../views/contactForm.html'})

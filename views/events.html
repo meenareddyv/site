@@ -1,0 +1,23 @@
+<div ng-controller="eventController" id="envelope">
+    <div align="center">
+        <div>Upcoming Events for Ugadi Celebrations</div>
+        <video width="320" height="240" controls>
+            <source src="../resources/videos/teaser001.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div>సమవర్తి - A Teaser</div>
+    </div>
+    <div>
+        <div><br><br>Event Archives:</div>
+        <ul>
+            <li ng-repeat="event in events"><a ng-click="displayEventPics(event.event)">{{event.desc}}</a></li>
+        </ul>
+    </div>
+    <div ng-show="showPics">
+        <slide ng-repeat="photo in photos" active="slide.active" id="slides_control">
+          <
+          <img class="photo" ng-src="{{photo.src}}">
+        </slide>
+    </div>
+</div>
+
