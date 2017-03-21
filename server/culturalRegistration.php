@@ -26,7 +26,7 @@ $run_insert = mysqli_query($con, $sql) or die(mysql_error());
 
 if ($run_insert) {
 
-    $culturalMessage = "<html><body>Dear " . $ownerofevent . ", <br><br>Thanks for your interest to participate in upcoming Deepavali event, 
+    $culturalMessage = "<html><body>Dear " . $ownerofevent . ", <br><br>Thanks for your interest to participate in upcoming Ugadi event, 
 	  Troy Telugu Association Cultural Committee will review your request and get in touch with you soon.<br><br>";
     $culturalMessage .= "<table rules='all' style='border-color: #666;' cellpadding='10'>";
     $culturalMessage .= "<tr><td><strong>Name of the Event</strong> </td><td>" . $nameofevent . "</td></tr>";

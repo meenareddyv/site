@@ -8,7 +8,7 @@ angular.module('ttaControllers', [])
     var i = 0;
     $scope.items[i++] = { link : "home", caption : "Home" };
     $scope.items[i++] = { link : "sponsorship", caption : "Sponsorship" };
-    // $scope.items[i++] = { link : "culturalRegistration", caption : "Cultural Registration" };
+    $scope.items[i++] = { link : "culturalRegistration", caption : "Cultural Registration" };
     $scope.items[i++] = { link : "memberRegistration", caption : "Member Registration" };
     $scope.items[i++] = { link : "events", caption : "Events" };
     $scope.items[i++] = { link : "aboutus", caption : "About Us" };
@@ -40,9 +40,9 @@ angular.module('ttaControllers', [])
         $scope.cultural.typeofevent = 'Dancing';
     };
     $scope.resetValues();
-    // $scope.form = true;
-    $scope.form = false;
-    $scope.message = "Enrollments for Deepavali have been closed, in case of any questions please write an email to cultural@troytelugu.org";
+    $scope.form = true;
+    // $scope.form = false;
+    // $scope.message = "Enrollments for Ugadi have been closed, in case of any questions please write an email to cultural@troytelugu.org";
     $scope.submitCulturalRegistration = function () {
         $http({
             method: 'POST',
