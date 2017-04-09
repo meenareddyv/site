@@ -10,7 +10,7 @@ $contactSubject = $data->subject;
 $subject = "From TTA Contact Form";
 $message = $data->message;
 
-$to = "info@troytelugu.org, chidamber.bhat@gmail.com";
+$to = "info@troytelugu.org, chidamber.bhat@gmail.com, guruperi11@gmail.com";
 
 $date = date('m/d/Y h:i:s a', time());
 

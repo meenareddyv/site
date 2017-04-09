@@ -15,7 +15,7 @@ $message = $data->message;
 
 $subject = "Online Registration for Cultural Event";
 
-$to = "info@troytelugu.org, cultural@troytelugu.org, chidamber.bhat@gmail.com";
+$to = "cultural@troytelugu.org, chidamber.bhat@gmail.com, guruperi11@gmail.com";
 
 $date = date('m/d/Y h:i:s a', time());
 
@@ -42,7 +42,7 @@ if ($run_insert) {
     $culturalMessage .= "</body></html>";
 
     $headers = "From: cultural@troytelugu.org\r\n";
-    $headers .= "Reply-To: cultural@troytelugu.org\r\n";
+    $headers .= "Reply-To: guruperi11@gmail.com\r\n";
     $headers .= "CC: " . $to . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
