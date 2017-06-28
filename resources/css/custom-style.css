@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 18, 2017, 7:37:22 PM
+    Author     : Meena
+*/
+
+body { 
+  font-family: 'Open Sans', sans-serif;  
+  background-image: url("../images/bg7.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+}
+
+/* STRUCTURE */
+
+#pagewrap {
+	padding: 1px;
+	width: 100%;
+	margin: 1px auto;
+	background: #E9E9E9; /*f2f5f6*/
+	color:#E9E9E9;
+}
+header {
+	height: 180px;
+	padding: 0 1px;
+	/*background: #101870; 191970*/
+	color: #F1F1F1;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;	
+	background-size: 100% 100%;
+        background-repeat: no-repeat;
+}
+
+.header-left{
+	float: left;
+	width: 25%;
+}
+.header-right{
+	float: left;
+	width: 50%;
+}
+.header-right1{
+	float: right;
+	width: 22%;
+}
+
+nav-header {
+	height: 30px;
+	padding: 1px 1px;
+}
+
+#content {
+	width: 300px;
+        margin-top: -65px;	
+        float : left;
+        
+        
+}
+
+#middle {
+	width: 800px; /* Account for margins + border values */	              
+        float : left;
+        margin-top: -10px;
+        
+        
+}
+
+#sidebar {
+	width: 200px;
+	padding: 3px;
+        
+	
+}
+footer {
+        margin-top: -100%;
+	clear: both;
+	padding: 0px;
+}
+

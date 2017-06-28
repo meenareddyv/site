@@ -1,6 +1,6 @@
 <div ng-controller="culturalRegController" id="envelope">
     <form name="culturalReg" class="contact_form" novalidate>
-        <h3 style="text-align:center">Cultural Registration for Ugadi 2017</h3>
+        <h3 style="text-align:center">Cultural Registration Form 2017</h3>
         <h4 style="text-align:center; color:red" ng-hide="form"><br>{{message}}</h4>
         <ul ng-show="form">
             <li>
@@ -47,7 +47,7 @@
             </li>
 
             <li>
-                <button class="btnAction" ng-click="submitCulturalRegistration()" ng-disabled="culturalReg.$invalid">Register</button>
+                <button class="btnAction" style="background-color: #2FC332" ng-click="submitCulturalRegistration()" ng-disabled="culturalReg.$invalid">Register</button>
             </li>
         </ul>
     </form>

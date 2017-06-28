@@ -101,3 +101,76 @@
   background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
   background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
+
+
+.example3 .nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.example3 .navbar-toggle {
+  padding: 10px;
+  margin: 0px 15px 0px 15px;
+}
+.img-circle {
+    border-radius: 20%; 
+    padding-top: 0px;
+    padding-right: 0px;
+    float: left;
+    margin: 0px;
+}
+/*.example3.navbar-brand>img {
+  height: auto;
+  padding: 15px;  firefox bug fix 
+  width: auto;
+  float: left;
+  clear: both;
+   
+}*/
+
+.example3 .navbar-brand {
+    float: left;
+    padding: 10px;
+    width: 100%;
+  
+    
+}
+
+.brand-centered {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.brand-centered .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-toggle {
+    z-index: 1;
+}
+.navbar-alignit .navbar-header {
+   -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 20px;
+}
+.navbar-alignit .navbar-brand {
+ top: 50%;
+ display: block;
+ position: relative;
+ height: auto;
+ transform: translate(0,-50%);
+ margin-right: 15px;
+  margin-left: 15px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+ z-index: 9999;
+}
+
+
+
+
+

@@ -18,10 +18,11 @@
 }
 #hcssmenu a {
   line-height: 1.3;
-  padding: 6px 15px;
+  padding: 6px 15px ;
 }
 #hcssmenu {
   width: 100%;
+  padding: 6px 25px 6px 25px ;
 }
 #hcssmenu > ul > li {
   cursor: pointer;
@@ -34,7 +35,7 @@
 #hcssmenu > ul > li > a {
   font-size: 13px;
   display: block;
-  color: #ffffff;
+  color: white;
   text-shadow: 0 1px 1px #000;
   text-align:center;
   /**background: #64676e;

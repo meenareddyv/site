@@ -1,71 +1,77 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 body { 
-  font-family: 'Open Sans', sans-serif;
-  color: #666;
-  background: #191970;
+    font-family: 'Open Sans', sans-serif;  
+    background-image: url("../images/bg7.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
 }
+
 
 /* STRUCTURE */
 
 #pagewrap {
-	padding: 1px;
-	width: 100%;
-	margin: 1px auto;
-	background: #222930; /*f2f5f6*/
-	color:#E9E9E9;
+    padding: 1px;
+    width: 100%;
+    margin: 1px auto;
+    background: #E9E9E9; /*f2f5f6*/
+    color:#E9E9E9;
 }
 header {
-	height: 180px;
-	padding: 0 1px;
-	/*background: #101870; 191970*/
-	color: #F1F1F1;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
-	background-image: url("../images/TTA header.jpg");
-	background-size: 100% 100%;
-        background-repeat: no-repeat;
+    height: 180px;
+    padding: 0 1px;
+    /*background: #101870; 191970*/
+    color: #F1F1F1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;	
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .header-left{
-	float: left;
-	width: 25%;
+    float: left;
+    width: 25%;
 }
 .header-right{
-	float: left;
-	width: 50%;
+    float: left;
+    width: 50%;
 }
 .header-right1{
-	float: right;
-	width: 22%;
+    float: right;
+    width: 22%;
 }
 
 nav-header {
-	height: 30px;
-	padding: 1px 1px;
+    height: 30px;
+    padding: 1px 1px;
 }
 
 #content {
-	width: 15%;
-	float: left;
-	padding: 5px 15px;
-	background: #222930;
+    width: 200px;
+    margin-top: 0px;
+    Padding: 0px 0px;
+
+
+
 }
 
 #middle {
-	width: 64%; /* Account for margins + border values */
-	float: left;
-	margin: 0px 1px 1px 1px;
+    width: 800px; /* Account for margins + border values */	
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: -10px;
 }
 
 #sidebar {
-	width: 20%;
-	padding: 3px 10px;
-	float: left;
+    width: 200px;
+    padding: 3px;
+
+
 }
 footer {
-	clear: both;
-	padding: 0 5px;
+    clear: both;
+    padding: 0px;
 }
 
 /************************************************************************************
@@ -73,128 +79,144 @@ MEDIA QUERIES
 *************************************************************************************/
 /* for 980px or less */
 @media screen and (max-width: 980px) {
-	
-	#pagewrap {
-		width: 94%;
-	}
-	#content {
-		width: 41%;
-		padding: 1% 4%;
-	}
-	#middle {
-		width: 41%;
-		padding: 1% 4%;
-		margin: 0px 0px 5px 5px;
-		float: right;
-	}
-	
-	#sidebar {
-		clear: both;
-		padding: 1% 4%;
-		width: auto;
-		float: none;
-	}
 
-	header, footer {
-		padding: 1% 4%;
-	}
+    #pagewrap {
+        width: 94%;
+    }
+    #content {
+        width: 41%;
+        padding: 1% 4%;
+    }
+    #middle {
+        width: 41%;
+        padding: 1% 4%;
+        margin: 0px 2px 5px 5px;
+        
+    }
+
+    #sidebar {
+        clear: both;
+        padding: 1% 4%;
+        width: auto;
+        float: none;
+    }
+
+    header, footer {
+        padding: 1% 4%;
+    }
 }
 
 /* for 700px or less */
 @media screen and (max-width: 600px) {
 
-	#content {
-		width: auto;
-		float: none;
-	}
-	
-	#middle {
-		width: auto;
-		float: none;
-		margin-left: 0px;
-	}
-	
-	#sidebar {
-		width: auto;
-		float: none;
-	}
+    #content {
+        width: auto;
+        float: none;
+    }
+
+    #middle {
+        width: auto;
+        float: none;
+        margin-left: 0px;
+    }
+
+    #sidebar {
+        width: auto;
+        float: none;
+    }
 
 }
 
 /* for 480px or less */
 @media screen and (max-width: 480px) {
 
-	header {
-		height: auto;
-	}
-	h1 {
-		font-size: 2em;
-	}
-	#sidebar {
-		display: none;
-	}
+    header {
+        height: auto;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    #sidebar {
+        display: none;
+    }
 
 }
 
 
 #content {
-	background: #222930;
+    background: #F1F1F1;
 }
 #sidebar {
-	background: #222930;
-	margin: 2px;
+    background: #222930;
+    margin: 2px;
 }
 header, #content, #middle, #sidebar {
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 #pagewrap, header, #content, #sidebar, footer {
-	border: solid 0px #ccc;
+    border: solid 0px #ccc;
 }
 #middle{
-	border-left: solid 1px #ccc;
-	border-right: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
 }
 
 /*other styles*/
 .logo img {
-	width: 140px;
-	height: 115px;
-	z-index: 6;
-	margin-left: 5%;
-	border-radius: 40px;
+    width: 140px;
+    height: 115px;
+    z-index: 6;
+    margin-left: 5%;
+    border-radius: 40px;
 }
 
 .text-style {
-	font-size: 32px;
-	font-weight: 600;
-	font-family: georgia, serif;
-	margin-top: 35px;
-	color: #234423;
-	font-variant: normal;
-	text-align:center;
-	font-stretch: ultra-condensed;
-	
+    font-size: 32px;
+    font-weight: 600;
+    font-family: georgia, serif;
+    margin-top: 35px;
+    color: #234423;
+    font-variant: normal;
+    text-align:center;
+    font-stretch: ultra-condensed;
+
 }
 
 .center-align{
-text-align: center;
+    text-align: center;
 }
 
 .ad-img-style {
-	height: 80px;
-	width: 100%;
-	border-bottom: 1px solid #000;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #000;
 }
 
 /* Carousel styles */
 
 #slides_control img {
-  margin:auto;
-  width: 100%;
+    margin:auto;
+    width: 100%;
 }
 
 .vision, .about {
     margin:30px;
+}
+
+div.container2 {
+    border: 1px solid #000000;
+    overflow: hidden;
+    width: 100%;
+}
+
+div.left1 {
+    width: 45%;
+    float: left;
+}
+
+div.right1 {
+    width: 45%;
+    float: right;
 }
 
