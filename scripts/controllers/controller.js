@@ -29,7 +29,7 @@ angular.module('ttaControllers', [])
 .controller('homeController', function($scope) {
     $scope.myInterval = 3500;
     $scope.slides = [
-      { image: '../resources/images/Ugadi 2017 Flyer1.0.JPG'  }
+      { image: '../resources/images/Ugadi_001.png'  }
     ];
 })
 
