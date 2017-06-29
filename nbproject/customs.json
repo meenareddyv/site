@@ -1,0 +1,7 @@
+{
+    "elements": {
+        "tta-scroller": {},
+        "ng-view": {}
+    },
+    "attributes": {}
+}

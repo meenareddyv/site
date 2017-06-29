@@ -10,8 +10,7 @@ angular.module('ttaControllers', [])
     $scope.items[i++] = { link : "sponsorship", caption : "Sponsorship" };
     $scope.items[i++] = { link : "culturalRegistration", caption : "Cultural Registration" };
     $scope.items[i++] = { link : "memberRegistration", caption : "Member Registration" };
-    $scope.items[i++] = { link : "events", caption : "Events" };
-    $scope.items[i++] = { link : "aboutus", caption : "About Us" };
+    $scope.items[i++] = { link : "events", caption : "Events" };    
     $scope.items[i++] = { link : "vision", caption : "Our Vision" };
     $scope.items[i++] = { link : "contact", caption : "Contact" };
     
@@ -30,6 +29,10 @@ angular.module('ttaControllers', [])
     $scope.myInterval = 3500;
     $scope.slides = [
       { image: '../resources/images/Ugadi_001.png'  }
+      ,{ image: '../resources/images/ugadi2017_2.jpg'  }          
+      ,{ image: '../resources/images/navratri.png'  }
+      ,{ image: '../resources/images/Diwali 2016.jpg'  }
+      ,{ image: '../resources/images/7Ta6rrjEc.jpg'  }
     ];
 })
 

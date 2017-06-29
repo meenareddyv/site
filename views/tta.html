@@ -3,16 +3,22 @@
         <title>Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../resources/css/styles.css">
+        <link rel="stylesheet" href="../resources/css/stylish-portfolio.css">
+        <link rel="stylesheet" href="../resources/css/custom-style.css">
         <link rel="stylesheet" href="../resources/css/nav.css">
         <link rel="stylesheet" href="../resources/css/footer.css">
         <link rel="stylesheet" href="../resources/css/form-styles.css">
         <link rel="stylesheet" href="../resources/css/side-menu-styles.css">
         <link rel="stylesheet" href="../resources/css/text-scroll.css" />
+        <link rel="stylesheet" href="../resources/css/bootstrap.css">
         <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
-        
+
+
+
         <script type="text/javascript" src="../resources/js/jquery.min.js"></script>
-        <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+        <script type="text/javscript" src="../resources/js/bootstrap.js"></script>
+        <script type="text/javscript" src="../resources/js/jquery.js"></script>
+        <script type="text/javascript" src="../resources/js/bootstrap.min_1.js"></script>
         <script type="text/javascript" src="../resources/angular158/angular.min.js"></script>
         <script type="text/javascript" src="../resources/angular158/angular-route.min.js"></script>
         <script type="text/javascript" src="../resources/angular158/angular-animate.min.js"></script>
@@ -23,29 +29,66 @@
         <script type="text/javascript" src="../scripts/controllers/directives.js?1500"></script>
         <script type="text/javascript" src="../scripts/controllers/app.js?1500"></script>
     </head>
-    <body  ng-app="ttaApp" ng-controller="mainController">
-        <div id="pagewrap">
-            <header></header>
-            <tta-scroller></tta-scroller>
-            <section id="content">
-		<div id="hcssmenu">
-                    <ul>
-                        <li ng-click='activate(item)'
-                            ng-repeat='item in items'
-                            ng-class="{'active': item == active}">
-                            <a href="#{{item.link}}"><span>{{item.caption}}</span></a>           
-                        </li>
-                    </ul>
-		</div>
-            </section>
-            <section id="middle">
-                <ng-view></ng-view>
-            </section>
-            <aside id="sidebar">
-                <div ng-repeat='ad in ads'>
-                    <a href="{{ad[0]}}"><img class="ad-img-style" src="../resources/ads/{{ad[1]}}"></a>
+    <body  ng-app="ttaApp" ng-controller="mainController" >
+        <div>            
+            <header>
+                <div class="example3" >                                                      
+                    <nav class="navbar navbar-default navbar-static-top" style="border-bottom: 1px #adadad solid"> 
+                        <a class="navbar-brand" href="#">                                        
+                            <img class="d-inline-block align-top img-circle " src="../resources/images/logo2.jpg" alt="">                                        
+                        </a>  
+
+                        <div class="container">                            
+                            <div class="navbar-header">                                
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>                        
+
+
+                            </div>
+
+                            <a class="navbar-brand" style="position: absolute;width: 100%;left: 0;text-align: center;margin:0 auto;z-index:3;color: black" href="#">TROY TELUGU ASSOCIATION, MICHIGAN</a>
+                            <a style="margin-left: 410px;margin-right: 410px;" ><img src="../resources/images/telugu_red.gif" alt=""></a>
+
+
+                            <div id="navbar3" class="navbar-collapse collapse">                                
+
+
+                                <ul class="nav navbar-nav navbar-left">    
+
+                                    <li ng-click='activate(item)'
+                                        ng-repeat='item in items'
+                                        ng-class="{'active': item == active}">
+                                        <a href="#{{item.link}}"><span>{{item.caption}}</span></a>           
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                            <!--/.nav-collapse -->
+                        </div>
+                        <!--/.container-fluid -->
+                    </nav>
                 </div>
+            </header>
+
+            <section id="content" style="margin-top: -40px">
+                <img  src="../resources/images/imageedit_1_8359729576.png" alt="Telugu">                 
+            </section> 
+            <section id="middle">                
+                <ng-view></ng-view>                
+            </section>
+
+            <aside  class="sidebar-nav">
+
             </aside>
+            <div ng-repeat='ad in ads'>
+                <a href="{{ad[0]}}"><img class="ad-img-style" src="../resources/ads/{{ad[1]}}"></a>
+            </div>
+
             <footer>
                 <tta-footer></tta-footer>
             </footer>

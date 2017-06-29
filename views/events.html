@@ -1,23 +1,17 @@
 <div ng-controller="eventController" id="envelope">
-    <div align="center">
-        <div>Upcoming Events for Ugadi Celebrations</div>
-        <video width="320" height="240" controls>
-            <source src="../resources/videos/teaser001.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div>సమవర్తి - A Teaser</div>
-    </div>
     <div>
-        <div><br><br>Event Archives:</div>
-        <ul>
-            <li ng-repeat="event in events"><a ng-click="displayEventPics(event.event)">{{event.desc}}</a></li>
+        <h3 style="text-align:center">Event Archives </h3>
+        <ul style="list-style-type: none;">
+            <li  ng-repeat="event in events">
+                <span class="glyphicon glyphicon-star">                    
+                </span>&nbsp;&nbsp;
+                <a style="color: #9f0202; font-size: medium; font-family: sans-serif; " ng-click="displayEventPics(event.event)"><b>{{event.desc}}</b></a></li>
         </ul>
     </div>
     <div ng-show="showPics">
-        <slide ng-repeat="photo in photos" active="slide.active" id="slides_control">
-          <
-          <img class="photo" ng-src="{{photo.src}}">
-        </slide>
+        <div class="container-slider">            
+            <img active="slide.active" width="20%" height="20%" style="border: 2px solid black" ng-repeat="photo in photos" class="slide" ng-src="{{photo.src}}">           
+        </div>
     </div>
 </div>
 
